@@ -3,6 +3,21 @@
   themes: light --default;
 }
 
+/* 🔥 MARQUEE */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  animation: marquee 20s linear infinite;
+}
+
+/* Buttons */
 .btn-primary {
   color: white;
   font-weight: 600;
@@ -20,17 +35,16 @@
 .btn-secondary {
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* gap-2 */
-  background-color: #f97316; /* bg-orange-500 */
-  color: #fff; /* text-white */
-  font-weight: 600; /* font-semibold */
-  padding: 0.75rem 1.5rem; /* py-3 px-6 */
-  border-radius: 9999px; /* rounded-full */
+  gap: 0.5rem;
+  background-color: #f97316;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .btn-secondary:hover {
-  background-color: #ea580c; /* hover:bg-orange-600 */
-  transform: translateY(-0.25rem); /* hover:-translate-y-1 */
+  background-color: #ea580c;
+  transform: translateY(-0.25rem);
 }
