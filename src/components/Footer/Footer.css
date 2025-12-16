@@ -1,0 +1,33 @@
+.footer-title {
+  font-size: medium;
+  color: rgb(238, 236, 236);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-link {
+  color: rgb(230, 227, 227);
+  margin-bottom: 6px;
+  list-style: disc;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.footer-link:hover,
+.footer-link2:hover {
+  transform: scale(1.05);
+  color: #f47726;
+  /* cursor: pointer; */
+}
+.opening-hours li {
+  color: rgb(230, 227, 227);
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  margin-bottom: 6px;
+}
+.social,
+.footer-link2 {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.social:hover {
+  transform: translateY(-4px);
+  cursor: pointer;
+}
